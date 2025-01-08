@@ -1,6 +1,8 @@
-function makeHttprequest(method, url,callback){
+function makeHttprequest(method, url){
     const xhr = new XMLHttpRequest()
-    // xhr.responseType = 'json'
-    console.log(xhr.responseType)
+    xhr.responseType = 'json';
+    xhr.addEventListener('load', () => {
+        
+    })
 }
 makeHttprequest('GET','https://dummyjson.com/users')
